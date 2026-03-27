@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #8b5cf6;
+  --color-brand-secondary: #6366f1;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+}
+
+.glass-card {
+  @apply bg-zinc-900/50 border border-zinc-800 backdrop-blur-sm rounded-2xl;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-lg shadow-purple-500/20 active:scale-[0.98];
+}
